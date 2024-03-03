@@ -1,0 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+  TODO: Add transitions between gradient using @property
+  also add a background transition on hover
+*/
+:root {
+  --clouds-day: linear-gradient(200deg,
+      #072738,
+      #144258,
+      #1e6f9a,
+      #3591bb,
+      #5e9dbb,
+      #7aa2b9);
+  --clouds-night: linear-gradient(200deg,
+      #01212f,
+      #02283a,
+      #083146,
+      #0b3d52,
+      #155071,
+      #367498);
+  --clear-day: linear-gradient(200deg, #1f91da, #2a98e0, #4b98c5, #7fcefb);
+  --clear-night: linear-gradient(200deg, #122259, #403d80, #634d8f, #9762a2);
+  --thunderstorm: linear-gradient(200deg,
+      #190418,
+      #46174e,
+      #6b377d,
+      #8e61bf,
+      #5b44a5,
+      #383882);
+  --rain: linear-gradient(200deg, #0b3831, #104e49, #228a7b, #21a988);
+  --drizzle: linear-gradient(200deg, #107e90, #2fafa8, #1f8a6c, #0e7b5d);
+  --snow: linear-gradient(200deg, #777b86, #838890, #a2a9ae, #adb7bd);
+  --atmostphere: linear-gradient(200deg, #3d393f, #5f4e4d, #87685f, #b2907b);
+}
+
+body {
+  min-height: 100vh;
+  background-image: var(--clear-night);
+  background-size: 100% 200%;
+  background-attachment: fixed;
+  animation: gradient 20s ease-out infinite;
+}
+
+body.clouds-day {
+  background-image: var(--clouds-day);
+}
+
+body.clouds-night {
+  background-image: var(--clouds-night);
+}
+
+body.rain {
+  background-image: var(--rain);
+}
+
+body.clear-day {
+  background-image: var(--clear-day);
+}
+
+body.clear-night {
+  background-image: var(--clear-night);
+}
+
+body.atmosphere {
+  background-image: var(--atmostphere);
+}
+
+body.snow {
+  background-image: var(--snow);
+}
+
+body.drizzle {
+  background-image: var(--drizzle);
+}
+
+body.thunderstorm {
+  background-image: var(--thunderstorm);
+}
+
+main {
+  min-height: 100vh;
+  max-width: 40rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-icon i {
+  font-size: 6rem;
+  margin: 1rem;
+}
+
+.city-details {
+  margin-top: 1.2rem;
+}
+
+.low-high {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 1.75rem;
+}
+
+.low-high span {
+  display: flex;
+}
+
+.stats-card {
+  display: flex;
+  align-items: center;
+}
+
+.weather-stats {
+  min-height: 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-stats i {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  flex-basis: 20%;
+  font-size: 1rem;
+}
+
+.weather_stats-row1,
+.weather_stats-row2 {
+  min-width: 140px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hourly-icon {
+  font-size: 1.3rem;
+  margin: 7px 0;
+}
+
+.daily-icons {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+}
+
+.daily-icons i {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.daily-icons .if-rain {
+  margin-left: 8px;
+}
+
+.accord-max-min {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.daily-weather-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.daily-weather-stats .daily-temp {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
+}
