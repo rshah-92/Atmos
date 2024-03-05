@@ -1,59 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>WeatherHub</title>
-		<meta
-			name="description"
-			content="Plan your day ahead with Atmos the Weather App."
-		/>
-		<link
-			rel="preload"
-			href="/fonts/weathericons-regular-webfont.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="/fonts/weather-icons.min.css" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-		<link
-			rel="alternate icon"
-			href="/favicon.ico"
-			type="image/x-icon"
-			sizes="32x32"
-		/>
-		<link rel="mask-icon" href="/favicon.svg" color="#ffffff" />
-		<meta name="theme-color" content="#ffffff" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://atmos.pages.dev/" />
-		<meta property="og:title" content="Atmos - Weather App" />
-		<meta property="og:site_name" content="Atmos - Weather App" />
-		<meta
-			property="og:description"
-			content="Plan your day ahead with Atmos the Weather App."
-		/>
-		<meta property="og:image" content="https://atmos.pages.dev/atmos.png" />
-		<meta property="og:image:height" content="1080" />
-		<meta property="og:image:type" content="image/png" />
-		<meta property="og:image:width" content="1920" />
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Rudra Shah | Software Developer</title>
 
-		<meta
-			property="twitter:image"
-			content="https://atmos.pages.dev/atmos.png"
-		/>
-	</head>
-	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/main.tsx"></script>
-	</body>
+   
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "UA-122228201-4")
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Rudra Shah</span>
+          <br />
+          I'm the Unknown Developer :D
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/1da499770ecc91e2-sticker.png"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Welcome to my online portfolio! I'm Rudra Shah, a passionate Computer Science undergraduate at Arizona State University, Tempe. 
+              With a solid GPA of 3.89/4.0 and consistent Dean's List recognition, I actively contribute to academia as an Undergraduate Teaching 
+              Assistant, supporting faculty and developing online resources for student accessibility. As an Admissions Officer, I engage with prospective
+              students, address inquiries, and proudly witnessed a 10% increase in enrollment. Beyond the classroom, my analytical skills come to the 
+              forefront as a Research Aide, where I contribute to identifying potential galaxies within Hubble Telescope data. Leading Engineers Without 
+              Borders, I spearhead initiatives addressing plastic waste, combining technical innovation with community engagement. Join me on this 
+              platform to explore my academic journey, leadership experiences, and my commitment to impactful projects that merge technology and 
+              social responsibility.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="./assets/Rudra_Shah_Resume.pdf" class="cta-btn cta-btn--resume" target="_blank">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Movie Recommendation System</h3>
+              <p class="project-wrapper__text-info">
+                The Movie Recommendation System employs advanced algorithms, incorporating Demographic and Content-Based Filtering, 
+                along with Weighted Ratings, to deliver personalized movie suggestions. With a focus on user preferences, demographics, 
+                and reliable ratings, the system provides an intuitive Jupyter Notebook interface for an enhanced and tailored movie-watching 
+                experience.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://65e3bd94619af41c86103026--beamish-taffy-63818e.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/rshah-92/Movie_Recommendation_System.git" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="https://65e3bd94619af41c86103026--beamish-taffy-63818e.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Screenshot 2024-03-05 at 12.23.33.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Atmos - The weather app</h3>
+              <p class="project-wrapper__text-info">
+                Your one-stop weather solution, offering real-time updates effortlessly. Seamlessly search for global weather conditions or 
+                let geolocation services bring local forecasts to your device. With an intuitive interface and detailed insights, WeatherHub 
+                ensures you're prepared for any weather. Personalize your experience, stay informed, and plan your day with confidence. 
+                Wherever you go, WeatherHub keeps you connected to the latest, accurate weather information.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://atmos.pages.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/rshah-92/Atmos" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+            
+            <div class="project-wrapper__image">
+              <a href="https://atmos.pages.dev/" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/East Lemon Weather.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Hangman</h3>
+              <p class="project-wrapper__text-info">
+                Introducing "Solo Hangman": A Python project that brings the classic word-guessing game to life in a one-person format. 
+                In this solo version, you'll guess letters to uncover a hidden word. With each incorrect guess, a piece of the hangman is drawn, 
+                starting with the head and progressing down the body. Your challenge is to guess the word before the stick figure is fully formed. 
+                Improve your vocabulary and coding skills while having fun!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://replit.com/@rudra-shah/Hangman#main.py"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/rshah-92/Hangman" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://replit.com/@rudra-shah/Hangman#main.py" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/hangman.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <p class="project-wrapper__text-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                sint saepe nostrum! Enim, perferendis.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <a href="mailto:shahrudra71@gmail.com" class="email-button">Email</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://wa.chatfuel.com/rshah92"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="whatsapp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/rudra_shahhh?igsh=MWg4Zjh0bG9keXViaQ%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/rshah-92"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          
+          <a 
+            href="https://www.linkedin.com/in/rudrashah9" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="linkedin">
+          
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://open.spotify.com/playlist/5zsh4LZAJlxcm187rKW2sN?si=66024062b8314ef8"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="spotify"
+          >
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+        </div>
+        <hr />
+       
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
 </html>
